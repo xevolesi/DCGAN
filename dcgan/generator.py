@@ -33,7 +33,9 @@ class GeneratorBlock(nn.Module):
         :param is_last_block: Whether the block is the last one.
         """
         super().__init__()
-        layers = [transpose_conv4x4(in_channels, out_channels, stride, padding)]
+        layers = [
+            transpose_conv4x4(in_channels, out_channels, stride, padding)
+        ]
         if is_last_block:
             layers.append(nn.Tanh())
         else:
