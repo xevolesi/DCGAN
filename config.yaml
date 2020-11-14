@@ -1,0 +1,4 @@
+batch_size: 128
+leaky_relu_slope: 0.2
+learning_rate: 0.0002
+beta1: 0.5
